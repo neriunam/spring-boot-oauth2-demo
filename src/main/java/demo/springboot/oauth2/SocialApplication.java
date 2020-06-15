@@ -26,6 +26,7 @@ public class SocialApplication extends WebSecurityConfigurerAdapter {
 	public static void main(String[] args) {
 		SpringApplication.run(SocialApplication.class, args);
 	}
+	
 
 	@GetMapping("/user")
 	public Map<String, Object> user(@AuthenticationPrincipal OAuth2User principal) {
